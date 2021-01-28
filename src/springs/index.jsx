@@ -21,7 +21,7 @@ export default function Springs({ isMove, ...props }) {
   const appearAnimations = useSprings(
     dataToShow.length,
     dataToShow.map((item, index, arrayItSelf) => ({
-      from: { opacity: isMove ? 1 : 0 },
+      from: { opacity: isMove ? 1 : 0, transition: `${index * 100}ms` },
       opacity: !isMove ? 1 : 0,
     }))
   );

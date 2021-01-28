@@ -123,9 +123,10 @@ h3 {
 }
 
 .list-container {
+  border-radius: 4px;
   background-color: rgb(255, 255, 255);
   padding: 16px;
-  overflow-y: scroll;
+  overflow: hidden;
   height: 90vh;
 }
 
